@@ -270,6 +270,10 @@ body {
   border-radius: 5%;
 }
 
+.contact .row form .btn a {
+  color: white;
+}
+
 /* Footer */
 footer {
   background-color: var(--primary);
@@ -287,8 +291,11 @@ footer .socials a {
 }
 
 footer .socials a:hover,
-footer .links a:hover {
+footer .links a:hover,
+.contact .row form .btn a:hover {
   color: var(--bg);
+  transform: rotate(180deg);
+  transition: 1s;
 }
 
 footer .links {
