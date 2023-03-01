@@ -137,8 +137,9 @@ body {
 
 /* About section */
 .about,
-.menu {
-  padding: 9rem 7% 1.4rem;
+.menu,
+.contact {
+  padding: 7rem 7% 1.3rem;
 }
 
 .about h2,
@@ -174,7 +175,7 @@ body {
 
 .about .row .content h3 {
   font-size: 1.8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .about .row .content p {
@@ -226,6 +227,7 @@ body {
   display: flex;
   margin-top: 2rem;
   background-color: #222;
+  padding-bottom: 4rem;
 }
 
 .contact .row .map {
