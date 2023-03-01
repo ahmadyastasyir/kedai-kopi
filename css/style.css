@@ -16,7 +16,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: white;
-  min-height: 2000px;
+  min-height: 3000px;
 }
 
 /* navbar */
@@ -69,7 +69,7 @@ body {
 .navbar .navbar-extra a {
   color: var(--primary);
 }
-#menu {
+#ham-menu {
   display: none;
 }
 
@@ -89,9 +89,9 @@ body {
   display: block;
   position: absolute;
   width: 100%;
-  height: 10%;
+  height: 22%;
   bottom: 0;
-  background: linear-gradient(0deg, rgba(1, 1, 3, 1) 3%, rgba(255, 255, 255, 0) 25%);
+  background: linear-gradient(0deg, rgba(1, 1, 3, 1) 8%, rgba(255, 255, 255, 0) 55%);
 }
 
 .hero .content {
@@ -131,17 +131,20 @@ body {
 }
 
 /* About section */
-.about {
+.about,
+.menu {
   padding: 9rem 7% 1.4rem;
 }
 
-.about h2 {
+.about h2,
+.menu h2 {
   text-align: center;
   font-size: 2.6rem;
   margin: 3rem;
 }
 
-.about h2 span {
+.about h2 span,
+.menu h2 span {
   color: var(--primary);
 }
 
@@ -173,6 +176,40 @@ body {
   font-weight: 100;
   line-height: 1.6;
 }
+
+/* Menu Section */
+.menu h2 {
+  margin-bottom: 1rem;
+}
+.menu p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.menu .row .menu-card {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.menu .row .menu-card img {
+  border-radius: 35%;
+  width: 80%;
+}
+
+.menu .row .menu-card .menu-card-title {
+  margin: 1rem auto 0.5rem;
+}
+
 /* Media Queries */
 
 /* Laptop */
@@ -186,7 +223,7 @@ body {
   html {
     font-size: 62.5%;
   }
-  #menu {
+  #ham-menu {
     display: inline-block;
   }
   .navbar .navbar-nav {
@@ -194,7 +231,7 @@ body {
     top: 100%;
     right: -100%;
     background-color: #fff;
-    width: 30rem;
+    width: 28.5rem;
     height: 100vh;
     transition: 0.3s;
   }
@@ -231,6 +268,9 @@ body {
   }
   .about .row .content p {
     font-size: 1.6rem;
+  }
+  .menu p {
+    font-size: 1.2rem;
   }
 }
 /* Mobile Phone */
