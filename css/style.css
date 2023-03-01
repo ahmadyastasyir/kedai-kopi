@@ -190,6 +190,7 @@ body {
 }
 .menu p,
 .contact p {
+  font-size: 1.4rem;
   text-align: center;
   max-width: 30rem;
   margin: auto;
@@ -201,6 +202,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-top: 5rem;
+  margin-bottom: 5rem;
   justify-content: center;
 }
 
